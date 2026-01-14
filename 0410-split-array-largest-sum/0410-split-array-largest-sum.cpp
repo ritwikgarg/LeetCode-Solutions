@@ -1,53 +1,64 @@
 class Solution {
 public:
     int splitArray(vector<int>& nums, int k) {
-        // Idea: subarray sum is monotonically increasing across the array
-        // We do BS on this. For a given maxSum, we try to see how many subarrays we can form, with max sum of each subArray not exceeding maxSum
-        // If no. of subarrays > k, make maxSum larger so that more elements can fit within a single subarray without violating the maxSum condition and we can fit no. of subarrays within k
-        // If no. of subarrays <= k, means that we  made maxSum so large that we can make < k no. of subarrays with each subarray sum not exceeding maxSum. These subarrays can easily be broken down to make more than k subarrays. Hence we should try to make maxSum smaller.
+        // Idea: BS will be on answer space of subarray sum
+        // Smallest possible subarray sum will be equal to the largest element in the array (when k = n)
+        // Largest possible subarray sum will be equal to the sum of all elements in the array (when k=1)
 
-        int n = nums.size();
-        int low = maxElement(nums);
-        int high = sumElems(nums);
+        // So, for a given 'maxSumAllowed' find out if k partitions can be made or not
+
+        // If less than k partitions can be made, then k partitions can definitely be made, so answer is possible but
+        // decrease maxSumAllowed in the hopes of finding a smaller answer
+
+        // If more than k partitions can be made, that means the maxSumAllowed is too small and hence should be increased
+
+        long long low = maxElement(nums);
+        long long high = totalSum(nums);
+        long long ans = high;
 
         while (low <= high) {
-            int mid = low + (high-low)/2;
-            if(countHowManySubarraysPossibleWithAllowedMaxSum(nums, n, mid) > k) {
-                low = mid+1;
-            } else {
+            long long mid = low + (high-low)/2;
+            if (canSplitIntoKSubarrays(nums, k, mid)) {
+                ans = mid;
                 high = mid-1;
+            } else {
+                low = mid+1;
             }
         }
-        return low;
+        return ans;
     }
 
-    int countHowManySubarraysPossibleWithAllowedMaxSum(vector<int>& nums, int n, int maxSumAllowed) {
-        int noOfSubarraysPossible = 1;
-        int subarraySum = 0;
+    bool canSplitIntoKSubarrays(vector<int>& nums, int k, long long maxSumAllowed) {
+        // Greedily start the first subarray from 0th element
+        int noOfSubarrays = 1;
+        long long sum  = 0;
         int i=0;
-        while (i<n) {
-            subarraySum += nums[i];
-            if (subarraySum <= maxSumAllowed) {
+        while (i<nums.size()) {
+            sum += nums[i];
+            if (sum <= maxSumAllowed) {
                 i++;
             } else {
-                noOfSubarraysPossible++;
-                subarraySum = nums[i];
+                noOfSubarrays++;
+                if (noOfSubarrays > k) {
+                    return false;
+                }
+                sum = nums[i];
                 i++;
             }
         }
-        return noOfSubarraysPossible;
+        return true;
     }
 
-    int maxElement(vector<int>& nums) {
+    long long maxElement(vector<int>& nums) {
         int maxElem = INT_MIN;
         for (int i: nums) {
             maxElem = max(maxElem, i);
         }
-        return maxElem;
+        return (long long) maxElem;
     }
 
-    int sumElems(vector<int>& nums) {
-        int sum = 0;
+    long long totalSum(vector<int>& nums) {
+        long long sum = 0;
         for (int i: nums) {
             sum += i;
         }
