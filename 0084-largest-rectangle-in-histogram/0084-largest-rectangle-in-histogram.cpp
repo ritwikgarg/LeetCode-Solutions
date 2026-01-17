@@ -1,52 +1,41 @@
-class Solution {
-public:
-    int largestRectangleArea(vector<int>& heights) {
-        // Idea: maintain a pse and nse for each bar and using those indexes, calculate area
-        vector<int> pseeIdx = prevSmallerOrEqualElementIndex(heights);
-        vector<int> nseIdx = nextSmallerElementIndex(heights);
+    class Solution {
+    public:
+        int largestRectangleArea(vector<int>& heights) {
+            // Idea: traverse normally to calculate pse. Whenever an element is popped from the stack, it means
+            // that the new element getting inserted is smaller than the current element. Hence the nse for the
+            // element being popped is the element that is being pushed in. As well as, the pse of the element popped
+            // is the element now on top of the stack. Using this, find the area.
 
-        int n = heights.size();
+            // In the end, if stack is not empty, it means each of those elements in the stack did not have a nse,
+            // Hence, pop each element, element now on top would be pse and nse = n. Find area again. Return max.
 
-        int maxArea = 0;
-        int area = 0;
-        for (int i=0; i<n; i++) {
-            area = heights[i] * (nseIdx[i] - pseeIdx[i] - 1);
-            maxArea = max(area, maxArea);
-        }
-        return maxArea;
-    }
+            long long maxArea = 0;
+            stack<int> monotonicStack;
+            int n = heights.size();
 
-    vector<int> prevSmallerOrEqualElementIndex(vector<int>& nums) {
-        stack<int> monotonicStack;
-        int n = nums.size();
-        vector<int> pseeIdx (n, 0);
-
-        for (int i=0; i<n; i++) {
-            while (!monotonicStack.empty() && nums[monotonicStack.top()] >= nums[i]) {
-                monotonicStack.pop();
+            for (int i=0; i<n; i++) {
+                long long area = 0;
+                while (!monotonicStack.empty() && heights[monotonicStack.top()] > heights[i]) {
+                    int nseIdx = i;
+                    int height = heights[monotonicStack.top()];
+                    monotonicStack.pop();
+                    int pseIdx = (monotonicStack.empty()) ? -1 : monotonicStack.top();
+                    area = height * 1LL * (nseIdx - pseIdx - 1);
+                    maxArea = max(area, maxArea);
+                }
+                monotonicStack.push(i);
             }
 
-            pseeIdx[i] = (monotonicStack.empty()) ? -1 : monotonicStack.top();
-            monotonicStack.push(i);
-        }
-
-        return pseeIdx;
-    }
-
-    vector<int> nextSmallerElementIndex(vector<int>& nums) {
-        stack<int> monotonicStack;
-        int n = nums.size();
-        vector<int> nseIdx (n, 0);
-
-        for (int i=n-1; i>=0; i--) {
-            while (!monotonicStack.empty() && nums[monotonicStack.top()] > nums[i]) {
+            long long area = 0;
+            while(!monotonicStack.empty()) {
+                int height = heights[monotonicStack.top()];
+                int nseIdx = n;
                 monotonicStack.pop();
+                int pseIdx = (monotonicStack.empty()) ? -1 : monotonicStack.top();
+                area = height * 1LL * (nseIdx - pseIdx - 1);
+                maxArea = max(area, maxArea);
             }
-            nseIdx[i] = (monotonicStack.empty()) ? n : monotonicStack.top();
-            monotonicStack.push(i);
+            return maxArea;
         }
-        
-        return nseIdx;
-    }
 
-};
+    };
