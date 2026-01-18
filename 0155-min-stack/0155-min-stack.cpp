@@ -1,51 +1,52 @@
 class MinStack {
-private:
-    stack<long long> st;      // ✅ must be long long
-    long long minVal = LLONG_MAX;
-
 public:
-    MinStack() {}
-
+    MinStack(): minVal(0) {
+        
+    }
+    
     void push(int val) {
-        long long x = val;
-
         if (st.empty()) {
-            minVal = x;
-            st.push(x);
-            return;
+            minVal = val;
+            st.push(0);
         }
-
-        if (x >= minVal) {
-            st.push(x);
+        else if (minVal > val) {
+            long long diff = 1LL*val - minVal;
+            minVal = val;
+            st.push(diff);
         } else {
-            st.push(2LL * x - minVal);  // encoded marker
-            minVal = x;
+            long long diff = 1LL*val - minVal;
+            st.push(diff);
         }
     }
-
+    
     void pop() {
-        if (st.empty()) return;
-
-        long long poppedElem = st.top(); // ✅ long long
-        st.pop();
-
-        if (poppedElem < minVal) {
-            minVal = 2LL * minVal - poppedElem; // restore previous min
+        if (st.top() < 0) {
+            minVal = minVal - st.top();
         }
-
-        if (st.empty()) minVal = LLONG_MAX; // optional, keeps getMin safe
+        st.pop();
     }
-
+    
     int top() {
-        if (st.empty()) return -1;
-
-        long long topElem = st.top(); // ✅ long long
-        if (topElem >= minVal) return (int)topElem;
-        return (int)minVal;
+         if (st.top() < 0) {
+            return (int)minVal;
+        } else {
+            return (int)(st.top() + minVal);
+        }
     }
-
+    
     int getMin() {
-        if (st.empty()) return -1;
         return (int)minVal;
     }
+private:
+    long long minVal;
+    stack<long long> st;
 };
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack* obj = new MinStack();
+ * obj->push(val);
+ * obj->pop();
+ * int param_3 = obj->top();
+ * int param_4 = obj->getMin();
+ */
