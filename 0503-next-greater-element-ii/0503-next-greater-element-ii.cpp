@@ -1,32 +1,26 @@
 class Solution {
 public:
     vector<int> nextGreaterElements(vector<int>& nums) {
-        stack<int> monotonicStack;
-        vector<int> nge;
+        // Idea: double the array, where after the last element, the entire array repeats again
         int n = nums.size();
+        stack<int> st;
+        vector<int> nge (n, 0);
 
         for (int i=2*n-1; i>=0; i--) {
-            // Perform 2 passes over the array, first pass to populate the monotonic stack to allow for circular
-            // searching, second pass to populate the stack for regular searching
             if (i/n >= 1) {
-                while(monotonicStack.empty() != true && monotonicStack.top() <= nums[i%n]) {
-                    monotonicStack.pop();
+                // In the first pass populate the stack
+                while(!st.empty() && st.top() <= nums[i%n]) {
+                    st.pop();
                 }
-                monotonicStack.push(nums[i%n]);
+                st.push(nums[i%n]);
             } else {
-                while(monotonicStack.empty() != true && monotonicStack.top() <= nums[i]) {
-                    monotonicStack.pop();
+                while(!st.empty() && st.top() <= nums[i]) {
+                    st.pop();
                 }
-                if(monotonicStack.empty() == true) {
-                    nge.insert(nge.begin(), -1);
-                } else {
-                    nge.insert(nge.begin(), monotonicStack.top());
-                }
-                monotonicStack.push(nums[i]);
-
+                nge[i] = (st.empty()) ? -1 : st.top();
+                st.push(nums[i]);
             }
         }
-
         return nge;
     }
 };
