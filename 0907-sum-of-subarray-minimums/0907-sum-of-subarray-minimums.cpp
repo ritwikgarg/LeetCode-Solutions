@@ -2,52 +2,52 @@ class Solution {
 public:
     int sumSubarrayMins(vector<int>& arr) {
         int n = arr.size();
+        vector<int> pseIdx = prevSmallerElementIdx(arr);
+        vector<int> nseIdx = nextSmallerElementIdx(arr);
 
-        vector<int> nextSmallestElementIndex = findNextSmallestElementIndex(arr);
-        vector<int> prevSmallestOrEqualElementIndex = findPreviousSmallestOrEqualElementIndex(arr);
-
-        int sum = 0;
-        int mod = (int)1e9+7;
+        int mod = 1e9+7;
+        int minSum = 0;
         for (int i=0; i<n; i++) {
-            int left = i - prevSmallestOrEqualElementIndex[i];
-            int right = nextSmallestElementIndex[i] - i;
-
-            sum = (sum + (left * right * 1LL * arr[i])%mod)%mod;
+            minSum = (minSum+(((arr[i] * 1LL * (nseIdx[i] - i))%mod) * 1LL * (i - pseIdx[i]))%mod)%mod;
         }
-        return sum;
+
+        return minSum;
     }
 
-    vector<int> findPreviousSmallestOrEqualElementIndex(vector<int>& arr) {
-        stack<int> monotonicStack; // Stack stores index of elements, not the elements themselves
-        vector<int> prevSmallestOrEqualElementIndex (arr.size(),0);
+    vector<int> nextSmallerElementIdx(vector<int>& nums) {
+        stack<int> st; 
+        int n = nums.size();
+        vector<int> nseIdx (n, 0);
 
-        int n=arr.size();
+        for (int i=n-1; i>=0; i--) {
+            while (!st.empty() && nums[st.top()] >= nums[i]) {
+                st.pop();
+            }
+
+            nseIdx[i] = (st.empty()) ? n : st.top();
+
+            st.push(i);
+        }
+        return nseIdx;
+    }
+
+    vector<int> prevSmallerElementIdx(vector<int>& nums) {
+        stack<int> st; //stores indices
+        int n = nums.size();
+        vector<int> pseIdx (n, 0);
+
         for (int i=0; i<n; i++) {
-            while (!monotonicStack.empty() && arr[monotonicStack.top()] > arr[i]) { //Note there is no equal here
-                monotonicStack.pop();
+            while (!st.empty() && nums[st.top()] > nums[i]) {
+                st.pop();
             }
-            prevSmallestOrEqualElementIndex[i] = (monotonicStack.empty()) ? -1 : monotonicStack.top();
 
-            monotonicStack.push(i);
-        }
-        return prevSmallestOrEqualElementIndex;
-    }
+            pseIdx[i] = (st.empty()) ? -1 : st.top();
 
-    vector<int> findNextSmallestElementIndex(vector<int>& arr) {
-        stack<int> monotonicStack; // Stack stores index of elements, not the elements themselves
-        vector<int> nextSmallestElementIndex (arr.size(), 0);
-
-        int n=arr.size();
-        for(int i=n-1; i>=0; i--) {
-            while (!monotonicStack.empty() && arr[monotonicStack.top()] >= arr[i]) {
-                monotonicStack.pop();
-            }
-            
-            nextSmallestElementIndex[i] = (monotonicStack.empty()) ? n : monotonicStack.top();
-
-            monotonicStack.push(i); 
+            st.push(i);
         }
 
-        return nextSmallestElementIndex;
+        return pseIdx;
     }
+
+
 };
