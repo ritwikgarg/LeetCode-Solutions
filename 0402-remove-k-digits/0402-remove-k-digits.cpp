@@ -1,54 +1,57 @@
 class Solution {
 public:
     string removeKdigits(string num, int k) {
-        stack<char> monotonicStack; // monotonic stack, largest digit on top, smallest at the bottom
+        // Idea: remove the first k largest elements we encounter from left -> right
+    
+        stack<char> st;
         int n = num.size();
 
-        if (k==n) {
+        if (k>n) {
             return "0";
         }
 
         for (int i=0; i<n; i++) {
-            while (!monotonicStack.empty() && k>0 && monotonicStack.top() > num[i]) {
-                monotonicStack.pop();
+            char digit = num[i];
+
+            while(!st.empty() && st.top() > digit && k>0) {
+                st.pop();
                 k--;
-                if (k==0) {
+                if (k == 0) {
                     break;
                 }
             }
-            monotonicStack.push(num[i]);
+
+            st.push(digit);
         }
 
-        while (k>0 && !monotonicStack.empty()) {
-            monotonicStack.pop();
+        while (k>0) {
+            st.pop();
             k--;
         }
 
-        string temp;
-        while (!monotonicStack.empty()) {
-            temp.push_back(monotonicStack.top());
-            monotonicStack.pop();
-        }
-
-        reverse(temp.begin(), temp.end());
-
-        string ans;
-        bool found1stDigit = false;
-        for (int i=0; i<temp.size(); i++) {
-            if (temp[i] != '0') {
-                found1stDigit = true;
-            }
-
-            if (found1stDigit) {
-                ans.push_back(temp[i]);
-            }
-        }
-
-        if (ans.empty()) {
+        if (st.empty()) {
             return "0";
         }
-        
-        return ans;
 
+        string ans = "";
+        while (!st.empty()) {
+            ans.push_back(st.top());
+            st.pop();
+        }
+        reverse(ans.begin(), ans.end());
+
+        int firstDigitIdx = ans.size();
+        for (int i=0; i<ans.size(); i++) {
+            if (ans[i] != '0') {
+                firstDigitIdx = i;
+                break;
+            }
+        }
+
+        if (firstDigitIdx == ans.size()) {
+            return "0";
+        }
+
+        return ans.substr(firstDigitIdx, ans.size()-firstDigitIdx+1);
     }
 };
