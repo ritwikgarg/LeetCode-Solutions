@@ -4,56 +4,49 @@ public:
         int rows = matrix.size();
         int cols = matrix[0].size();
 
-        vector<vector<int>> prefixMatrix(rows, vector<int>(cols));
-
-        for (int j=0; j<cols; j++) {
-            int sum = 0;
-            for (int i=0; i<rows; i++) {
-                if (matrix[i][j] == '1') {
-                    sum += 1;
-                } else {
-                    sum = 0;
-                }
-                prefixMatrix[i][j] = sum;
-            }
-        }
-
         int maxArea = 0;
-        int area = 0;
+
+        vector<int> heights (cols, 0);
         for (int i=0; i<rows; i++) {
-            area = maxAreaInHistogram(prefixMatrix[i]);
+            for (int j=0; j<cols; j++) {
+                if (matrix[i][j] == '1') {
+                    heights[j]+=1;
+                } else {
+                    heights[j] = 0;
+                }
+            }
+            int area = maxAreaInHistogram(heights);
             maxArea = max(area, maxArea);
         }
+
         return maxArea;
     }
 
-    int maxAreaInHistogram(vector<int> nums) {
-        int n = nums.size();
+    int maxAreaInHistogram(vector<int>& heights) {
         stack<int> st;
+        int n = heights.size();
         int maxArea = 0;
 
         for (int i=0; i<n; i++) {
-            int area = 0;
-            while (!st.empty() && nums[st.top()] > nums[i]) {
-                int nseIdx = i;
-                int height = nums[st.top()];
+            while (!st.empty() && heights[st.top()] > heights[i]) {
+                int currHeight = heights[st.top()];
                 st.pop();
-                int pseIdx = (st.empty()) ? -1 : st.top();
-                area = height * (nseIdx - pseIdx - 1);
-                maxArea = max (area, maxArea);
+                int nseIdx = i;
+                int pseIdx = st.empty() ? -1 : st.top();
+                int area = (nseIdx - pseIdx - 1) * currHeight;
+                maxArea = max(maxArea, area);
             }
+
             st.push(i);
         }
 
-        // Elements that don't have a nseIdx -> assume nseIdx = n 
-        int area = 0;
         while (!st.empty()) {
             int nseIdx = n;
-            int height = nums[st.top()];
+            int currHeight = heights[st.top()];
             st.pop();
-            int pseIdx = (st.empty()) ? -1 : st.top();
-            area = height * (nseIdx - pseIdx - 1);
-            maxArea = max(area, maxArea);
+            int pseIdx = st.empty() ? -1 : st.top();
+            int area = (nseIdx - pseIdx - 1) * currHeight;
+            maxArea = max(maxArea, area);
         }
 
         return maxArea;
