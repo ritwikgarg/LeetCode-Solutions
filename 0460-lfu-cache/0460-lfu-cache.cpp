@@ -1,132 +1,147 @@
 class LFUCache {
 public:
-    LFUCache(int capacity): capacity(capacity), minFreq(0), totalSize(0) {
+    LFUCache(int capacity): size(0), capacity(capacity), minFreq(0) {
         
     }
     
     int get(int key) {
-        if(nodeMap.find(key) != nodeMap.end()) { // Node exists in the cache
-            Node* existingNode = nodeMap[key];
-            int currFreq = existingNode->freq;
-
-            DLL& currDLL = freqMap[currFreq];
-            increaseNodeFreq(currDLL, existingNode);
-
-            // Return the value
-            return existingNode->value;
-        } else {
+        if (nodeMap.find(key) == nodeMap.end()) {
             return -1;
         }
+
+        Node* node = nodeMap[key];
+        int currFreq = node->freq;
+        node->freq = currFreq+1;
+
+        detachNode(currFreq, node);  
+        attachNodeAfterHead(currFreq+1, node);
+
+        if (currFreq == minFreq && freqMap.find(currFreq) == freqMap.end()) {
+            minFreq = currFreq + 1;
+        }
+
+        return node->value;
     }
     
     void put(int key, int value) {
         if (capacity == 0) return;
-        if (nodeMap.find(key) != nodeMap.end()) { // Key already exists in the cache
-            Node* existingNode = nodeMap[key];
-
-            int currFreq = existingNode->freq;
-            DLL& currDLL = freqMap[currFreq];
-
-            existingNode->value = value; // Update the value
-
-            increaseNodeFreq(currDLL, existingNode);
-        } else { // Cache is full
-            if (totalSize == capacity) {
-                // Remove the LFU node, if 2 or more LFU nodes, remove the LRU node among them
-                DLL& minFreqDLL = freqMap[minFreq];
-                Node* lfuNode = minFreqDLL.tail.prev;
-                detachNode(minFreqDLL, lfuNode);
-
-                // Remove node from nodeMap;
-                nodeMap.erase(lfuNode->key);
-
-                delete lfuNode;
-            } else {
-                totalSize++;
+        if (nodeMap.find(key) == nodeMap.end()) {
+            if (size == capacity) {
+                removeMinFreqNode();
+                size--;
             }
-
             Node* newNode = new Node(key, value);
-            // Add new node into nodeMap
+            attachNodeAfterHead(1, newNode);
             nodeMap[key] = newNode;
-            
-            // Add new node to freq=1 DLL
             minFreq = 1;
-            DLL& minFreqDLL = freqMap[minFreq];
-            addNodeAfterHead(minFreqDLL, newNode);
+            size++; 
+        } else {
+            Node* node = nodeMap[key];
+            node->value = value;
+
+            int currFreq = node->freq;
+            node->freq = currFreq+1;
+
+            detachNode(currFreq, node);
+            attachNodeAfterHead(currFreq+1, node);   
+            if (currFreq == minFreq && freqMap.find(currFreq) == freqMap.end()) {
+                minFreq = currFreq + 1;
+            }         
         }
     }
-
 private:
     struct Node {
-        int key;
-        int value;
-        int freq;
         Node* next;
         Node* prev;
 
-        Node(): key(-1), value(-1), freq(0), next(nullptr), prev(nullptr) {}
-        Node(int k, int v): key(k), value(v), freq(1), next(nullptr), prev(nullptr) {}
+        int key;
+        int value;
+        int freq;
+        Node() {
+            next = nullptr;
+            prev = nullptr;
+        }
+        Node (int k, int v) {
+            freq = 1;
+            key = k;
+            value = v;
+            next = nullptr;
+            prev = nullptr;
+        }
     };
+    int size;
+    int capacity;
+    int minFreq;
+    unordered_map <int, Node*> nodeMap;
 
     struct DLL {
         Node head;
         Node tail;
         int size;
 
-        DLL(): size(0) {
+        DLL() {
             head.next = &tail;
             tail.prev = &head;
+            head.prev = nullptr;
+            tail.next = nullptr;
+            size = 0;
         }
     };
 
-    void detachNode(DLL& dll, Node* node) {
+    unordered_map <int, DLL> freqMap;
+
+    void attachNodeAfterHead(int freq, Node* node) {
+        DLL& currDLL = freqMap[freq];
+        currDLL.size++;
+
+        Node* oldNext = currDLL.head.next;
+
+        currDLL.head.next = node;
+        node->next = oldNext;
+
+        oldNext->prev = node;
+        node->prev = &currDLL.head;
+    }
+
+    void detachNode(int freq, Node* node) {
+        DLL& oldDLL = freqMap[freq];
+
         Node* prevNode = node->prev;
         Node* nextNode = node->next;
 
         prevNode->next = nextNode;
         nextNode->prev = prevNode;
 
-        dll.size--;
-    }
+        node->next = nullptr;
+        node->prev = nullptr;
 
-    void addNodeAfterHead(DLL& dll, Node* node) {
-        Node* oldNextOfHead = dll.head.next;
-
-        // Next of head points to node, prev of node points to head
-        dll.head.next = node; 
-        node->prev = &dll.head;
-
-        // Next of node points to oldNextOfHead, prev of oldNextOfHead points to node
-        oldNextOfHead->prev = node;
-        node->next = oldNextOfHead;
-
-        dll.size++;
-    }
-
-    void increaseNodeFreq(DLL& currDLL, Node* existingNode) {
-        // 1) Detach the node from the current freq DLL
-        detachNode(currDLL, existingNode);
-
-        // 2) Add the node into the next freq DLL, right after head
-        int currFreq = existingNode->freq;
-        DLL& nextDLL = freqMap[currFreq+1]; //Creates new DLL if it doesn't already exist
-        existingNode->freq++;
-        addNodeAfterHead(nextDLL, existingNode);
-
-        // 3) Update minFreq if required
-        if(currFreq == minFreq && currDLL.size == 0) {
-            freqMap.erase(minFreq);
-            minFreq++;
+        oldDLL.size--;
+        if (oldDLL.size == 0) {
+            freqMap.erase(freq);
         }
     }
 
-    int minFreq;
-    int totalSize;
-    int capacity;
-    unordered_map <int, DLL> freqMap; // Stores a DLL for each frequency 
-    unordered_map <int, Node*> nodeMap; // Stores all the nodes across all frequencies
-};
+    void removeMinFreqNode() {
+        DLL& minFreqDLL = freqMap[minFreq];
+        Node* lastNode = minFreqDLL.tail.prev;
+        detachNode(minFreq, lastNode);
+        nodeMap.erase(lastNode->key);
+        delete lastNode;
 
+        if (nodeMap.empty()) {
+            minFreq = 0;
+            return;
+        }
+
+        // If minFreq list got erased, advance to next existing freq
+        if (freqMap.find(minFreq) == freqMap.end()) {
+            int f = minFreq + 1;
+            while (freqMap.find(f) == freqMap.end()) f++;
+            minFreq = f;
+        }
+
+    }
+};
 
 /**
  * Your LFUCache object will be instantiated and called as such:
