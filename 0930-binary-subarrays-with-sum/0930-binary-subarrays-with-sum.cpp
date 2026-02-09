@@ -1,24 +1,31 @@
 class Solution {
 public:
     int numSubarraysWithSum(vector<int>& nums, int goal) {
-        unordered_map <int, int> prefixSumMap; // stores sum -> count of that sum
-        int n = nums.size();
+        return (int)sumLesserThanEqualToGoal(nums, goal) - (int)sumLesserThanEqualToGoal(nums, goal-1);
+    }
+
+    long long sumLesserThanEqualToGoal(vector<int>& nums, int goal) {
+        if (goal < 0) return 0;
+        
         int left = 0;
         int right = 0;
-        int sum = 0;
         int count = 0;
+        long long sum = 0LL;
+
+        int n = nums.size();
+
         while (right < n) {
             sum += nums[right];
-            int want = sum - goal;
-            if (prefixSumMap.find(want) != prefixSumMap.end()) {
-                count+=prefixSumMap[want];
+
+            while (sum > goal) {
+                sum -= nums[left];
+                left++; 
             }
-            if (sum == goal) {
-                count++;
-            }
-            prefixSumMap[sum]++;
+
+            count += right-left+1;
             right++;
         }
+
         return count;
     }
 };
