@@ -6,12 +6,13 @@ public:
             return 0;
         }
 
-        int parent = kthGrammar(n-1, (k+1)/2);
+        int mid = (1 << (n-1))/2;
 
-        if (k % 2 == 1)
-            return parent;
-        else
-            return !parent;
+        if (k <= mid) {
+            return kthGrammar(n-1, k);
+        } else {
+            return !kthGrammar(n-1, k-mid);
+        }
     }
 
 };
