@@ -1,31 +1,24 @@
 class Solution {
 public:
     vector<string> generateParenthesis(int n) {
-        vector<string> list;
-        int openUsed = 0;
-        int closedUsed = 0;
+        vector<string> ans;
         string curr = "";
-        generateNextCombination(list, curr, openUsed, closedUsed, n);
-        return list;
+        generate(n, 0, 0, curr, ans);
+        return ans;
     }
 
-    void generateNextCombination(vector<string>& list, string& curr, int openUsed, int closedUsed, int n) {
-        if (openUsed + closedUsed == 2*n) {
-            list.push_back(curr);
+    void generate(int n, int openingCnt, int closingCnt, string curr, vector<string>& ans) {
+        if (openingCnt == n && closingCnt == n) {
+            ans.push_back(curr);
             return;
         }
 
-        if (openUsed < n) {
-            curr.push_back('(');
-            generateNextCombination(list, curr, openUsed+1, closedUsed, n);
-            curr.pop_back();
-        }
-       
-        if (closedUsed < openUsed) {
-            curr.push_back(')');
-            generateNextCombination(list, curr, openUsed, closedUsed+1, n);
-            curr.pop_back();
+        if (openingCnt < n) {
+            generate(n, openingCnt+1, closingCnt, curr + "(", ans);
         }
 
+        if (closingCnt < n && closingCnt < openingCnt) {
+            generate(n, openingCnt, closingCnt+1, curr + ")", ans);
+        }
     }
 };
