@@ -35,6 +35,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0006-zigzag-conversion](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0006-zigzag-conversion/) | Medium |
 | [0022-generate-parentheses](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
 | [0784-letter-case-permutation](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0784-letter-case-permutation/) | Medium |
 ## Backtracking
