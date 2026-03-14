@@ -22,6 +22,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0060-permutation-sequence](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0060-permutation-sequence/) | Hard |
 | [0779-k-th-symbol-in-grammar](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0779-k-th-symbol-in-grammar/) | Medium |
 ## Bit Manipulation
 | Problem Name | Difficulty |
@@ -31,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0060-permutation-sequence](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0060-permutation-sequence/) | Hard |
 | [0779-k-th-symbol-in-grammar](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0779-k-th-symbol-in-grammar/) | Medium |
 ## String
 | Problem Name | Difficulty |
