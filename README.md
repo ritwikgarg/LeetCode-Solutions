@@ -49,4 +49,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0041-first-missing-positive](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0041-first-missing-positive/) | Hard |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0041-first-missing-positive](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0041-first-missing-positive/) | Hard |
 <!---LeetCode Topics End-->
