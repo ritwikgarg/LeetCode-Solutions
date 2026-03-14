@@ -1,40 +1,32 @@
 class Solution {
 public:
     string convert(string s, int numRows) {
-        if (numRows == 1) return s;
-
-        string ans = "";
+        if (numRows == 1) {
+            return s;
+        }
         int n = s.size();
+        vector<string> matrix(numRows);
 
-        vector<vector<char>> matrix(numRows);
         int row = 0;
-        bool down = true;
+        int direction=1;
 
-        for (int i = 0; i < n; i++) {
-            if (row >= numRows && down == true) {
-                row -= 2;
-                down = false;
-            }
-            else if (row < 0 && down == false) {
-                row += 2;
-                down = true;
-            }
+        for (int i=0; i<n; i++) {
+            matrix[row] += s[i];
 
-            matrix[row].push_back(s[i]);
-
-            if (row < numRows && down == true) {
-                row++;
+            if (row == numRows-1) {
+                direction = -1;
             } 
-            else if (row >= 0 && down == false) {
-                row--;
+            if (row == 0) {
+                direction = 1;
             }
+
+            row += direction;
+            
         }
 
-        for (int i = 0; i < numRows; i++) {
-            int len = matrix[i].size();
-            for (int j = 0; j < len; j++) {
-                ans += matrix[i][j];
-            }
+        string ans = "";
+        for (int i=0; i<numRows; i++) {
+            ans+=matrix[i];
         }
 
         return ans;
