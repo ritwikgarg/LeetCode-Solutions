@@ -9,13 +9,11 @@ public:
             int oddLen = expand(s, i, i);
             int evenLen = expand(s, i, i+1);
 
-            if (oddLen > maxLen) {
-                maxLen = oddLen;
-                startingIndex = i;
-            }
-            if (evenLen > maxLen) {
-                maxLen = evenLen;
-                startingIndex = i;
+            int len = max(oddLen, evenLen);
+
+            if (len > maxLen) {
+                maxLen = len;
+                startingIndex = i - (len - 1) / 2;
             }
         }
 
