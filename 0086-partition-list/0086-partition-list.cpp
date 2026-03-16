@@ -16,22 +16,30 @@ public:
         ListNode *smallTail = small;
         ListNode *largeTail = large;
 
-        ListNode *curr = head;
-        while(curr != nullptr) {
-            ListNode *temp = curr->next;
-            curr->next = nullptr;
-            if (curr->val < x) {
-                smallTail->next = curr;
-                smallTail = curr;
-            } else {
-                largeTail->next = curr;
-                largeTail = curr;
-            }
-            curr = temp;
+        partitionList(head, small, large, smallTail, largeTail, x);
+        return small->next;
+    }
+
+    void partitionList(ListNode* curr, ListNode* small, ListNode* large, ListNode* smallTail, ListNode* largeTail, int x) {
+        if (curr == nullptr) {
+            smallTail->next = large->next;
+            largeTail->next = nullptr;
+            return;
         }
 
-        smallTail->next = large->next;
-        largeTail->next = nullptr;
-        return small->next;
+        ListNode* temp = curr->next;
+        curr->next = nullptr; // Detach the node from the list
+
+        if (curr->val < x) {
+            smallTail->next = curr;
+            smallTail = curr;
+        } else {
+            largeTail->next = curr;
+            largeTail = curr;
+        }
+
+        curr = temp;
+        partitionList(curr, small, large, smallTail, largeTail, x);
+
     }
 };
