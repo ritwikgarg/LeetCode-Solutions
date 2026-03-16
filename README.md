@@ -51,10 +51,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0022-generate-parentheses](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
+| [0055-jump-game](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0055-jump-game/) | Medium |
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0041-first-missing-positive](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0041-first-missing-positive/) | Hard |
+| [0055-jump-game](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0055-jump-game/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -68,4 +70,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0086-partition-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0086-partition-list/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0055-jump-game](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0055-jump-game/) | Medium |
 <!---LeetCode Topics End-->
