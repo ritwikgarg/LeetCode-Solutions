@@ -57,4 +57,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0041-first-missing-positive](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0041-first-missing-positive/) | Hard |
+## Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0086-partition-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0086-partition-list/) | Medium |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0086-partition-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0086-partition-list/) | Medium |
 <!---LeetCode Topics End-->
