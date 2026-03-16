@@ -37,6 +37,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0005-longest-palindromic-substring](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0006-zigzag-conversion](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0006-zigzag-conversion/) | Medium |
 | [0022-generate-parentheses](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
 | [0784-letter-case-permutation](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0784-letter-case-permutation/) | Medium |
@@ -48,6 +49,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0005-longest-palindromic-substring](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0022-generate-parentheses](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
 ## Array
 | Problem Name | Difficulty |
@@ -64,5 +66,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0005-longest-palindromic-substring](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0086-partition-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0086-partition-list/) | Medium |
 <!---LeetCode Topics End-->
