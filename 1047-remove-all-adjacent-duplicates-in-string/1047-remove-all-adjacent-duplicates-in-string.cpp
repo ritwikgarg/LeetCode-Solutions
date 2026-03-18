@@ -17,11 +17,6 @@ public:
             s[i++] = s[j++];
         }
 
-        string temp = "";
-        for (int k=0; k < i && k < n; k++) {
-            temp += s[k];
-        }
-
-        return temp;
+        return s.substr(0, i);
     }
 };
