@@ -1,29 +1,27 @@
 class Solution {
 public:
     string removeDuplicates(string s) {
-        stack<char> st;
         int n = s.size();
+        int i = 0; // write pointer
+        int j = 0; // read pointer
 
-        for (int i=0; i<n; i++) {
-            char ch = s[i];
-
-            if (!st.empty()) {
-                if (st.top() == ch) {
-                    st.pop();
-                    continue;
-                }
+        while (j < n) {
+            
+            if (i > 0 && s[i-1] == s[j]) {
+                i--;
+                i = max(0, i);
+                j++;
+                continue;
             }
 
-            st.push(ch);
+            s[i++] = s[j++];
         }
 
-        string ans = "";
-        while (!st.empty()) {
-            ans += st.top();
-            st.pop();
+        string temp = "";
+        for (int k=0; k < i && k < n; k++) {
+            temp += s[k];
         }
 
-        reverse(ans.begin(), ans.end());
-        return ans;
+        return temp;
     }
 };
