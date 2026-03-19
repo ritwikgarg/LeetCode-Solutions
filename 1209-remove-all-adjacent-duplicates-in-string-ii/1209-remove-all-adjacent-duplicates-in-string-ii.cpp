@@ -1,30 +1,25 @@
 class Solution {
 public:
     string removeDuplicates(string s, int k) {
-        stack <pair<char, int>> st;
         int n = s.size();
+        vector<int> count(n);
+        int i=0; // write pointer
 
-        for (int i=0; i<n; i++) {
-            if (!st.empty() && st.top().first == s[i]) {
-                st.top().second++;
-                if (st.top().second >= k) {
-                    st.pop();
-                }
+        for (int j=0; j<n; j++) {
+            s[i] = s[j];
+
+            if (i > 0 && s[i] == s[i-1]) {
+                count[i] = count[i-1] + 1;
             } else {
-                st.push({s[i], 1});
+                count[i] = 1;
             }
+
+            if (count[i] == k) {
+                i-=k;
+            }
+            i++;
         }
 
-        string ans = "";
-        while (!st.empty()) {
-            pair<char, int> p = st.top();
-            for (int i=1; i<=p.second; i++) {
-                ans += p.first;
-            }
-            st.pop();
-        }
-
-        reverse(ans.begin(), ans.end());
-        return ans;
+        return s.substr(0, i);
     }
 };
