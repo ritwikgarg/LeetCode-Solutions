@@ -39,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0060-permutation-sequence](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0060-permutation-sequence/) | Hard |
+| [0143-reorder-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0143-reorder-list/) | Medium |
 | [0390-elimination-game](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0390-elimination-game/) | Medium |
 | [0779-k-th-symbol-in-grammar](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0779-k-th-symbol-in-grammar/) | Medium |
 ## String
@@ -82,11 +83,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0086-partition-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0086-partition-list/) | Medium |
+| [0143-reorder-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0143-reorder-list/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0086-partition-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0086-partition-list/) | Medium |
+| [0143-reorder-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0143-reorder-list/) | Medium |
 | [0151-reverse-words-in-a-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0151-reverse-words-in-a-string/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
@@ -111,6 +114,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0143-reorder-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0143-reorder-list/) | Medium |
 | [0456-132-pattern](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0456-132-pattern/) | Medium |
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1047-remove-all-adjacent-duplicates-in-string/) | Easy |
 | [1209-remove-all-adjacent-duplicates-in-string-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1209-remove-all-adjacent-duplicates-in-string-ii/) | Medium |
