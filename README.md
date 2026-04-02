@@ -69,6 +69,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0041-first-missing-positive](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0041-first-missing-positive/) | Hard |
 | [0045-jump-game-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0045-jump-game-ii/) | Medium |
 | [0055-jump-game](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0055-jump-game/) | Medium |
+| [0456-132-pattern](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0456-132-pattern/) | Medium |
 | [0528-random-pick-with-weight](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0528-random-pick-with-weight/) | Medium |
 | [1306-jump-game-iii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1648-sell-diminishing-valued-colored-balls](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1648-sell-diminishing-valued-colored-balls/) | Medium |
@@ -95,6 +96,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0456-132-pattern](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0456-132-pattern/) | Medium |
 | [0528-random-pick-with-weight](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0528-random-pick-with-weight/) | Medium |
 | [1648-sell-diminishing-valued-colored-balls](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1648-sell-diminishing-valued-colored-balls/) | Medium |
 ## Sorting
@@ -108,6 +110,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0456-132-pattern](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0456-132-pattern/) | Medium |
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1047-remove-all-adjacent-duplicates-in-string/) | Easy |
 | [1209-remove-all-adjacent-duplicates-in-string-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1209-remove-all-adjacent-duplicates-in-string-ii/) | Medium |
 ## Prefix Sum
@@ -118,4 +121,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0528-random-pick-with-weight](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0528-random-pick-with-weight/) | Medium |
+## Monotonic Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0456-132-pattern](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0456-132-pattern/) | Medium |
+## Ordered Set
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0456-132-pattern](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0456-132-pattern/) | Medium |
 <!---LeetCode Topics End-->
