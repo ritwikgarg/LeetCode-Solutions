@@ -11,45 +11,37 @@
 class Solution {
 public:
     void reorderList(ListNode* head) {
-
-        if (head == nullptr || head->next == nullptr) return;
-        
         ListNode* slow = head;
         ListNode* fast = head->next;
 
-        while (fast != nullptr && fast->next != nullptr) {
-            slow = slow->next;
-            fast = fast->next->next;
+        while(fast != nullptr && fast->next != nullptr) {
+            slow=slow->next;
+            fast=fast->next->next;
         }
-        // slow now points to the middle of the linked list
 
-        ListNode* second = slow->next;
-        slow->next = nullptr;
-        ListNode* reverseList = reverse(second);
-
-        while (head != nullptr && reverseList != nullptr) {
-            ListNode* tempHead = head->next;
-            ListNode* tempRev = reverseList->next;
-
-            head->next = reverseList;
-            reverseList->next = tempHead;
-
-            head = tempHead;
-            reverseList = tempRev;
-        }
-    }
-
-    ListNode* reverse(ListNode* head) {
+        ListNode* curr = slow->next;
         ListNode* prev = nullptr;
-        ListNode* curr = head;
+        slow->next = nullptr;
 
         while (curr != nullptr) {
-            ListNode* next = curr->next; // save
-            curr->next = prev;           // reverse
-            prev = curr;                 // move prev
-            curr = next;                 // move curr
+            ListNode* nextNode = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = nextNode;
         }
 
-        return prev;
+        ListNode* reverse = prev;
+
+        while (head != nullptr && reverse != nullptr) {
+            ListNode* tempHead = head->next;
+            ListNode* tempRev = reverse->next;
+            head->next = reverse;
+            reverse->next = tempHead;
+            head = tempHead;
+            reverse = tempRev;
+        }
+
+
+
     }
 };
