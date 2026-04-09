@@ -11,7 +11,7 @@
 class Solution {
 public:
     ListNode* deleteMiddle(ListNode* head) {
-        if(!head | !head->next) {
+        if(!head || !head->next) {
             return nullptr;
         }
 
