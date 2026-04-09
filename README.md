@@ -40,6 +40,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0060-permutation-sequence](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0060-permutation-sequence/) | Hard |
 | [0143-reorder-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0143-reorder-list/) | Medium |
+| [0206-reverse-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0206-reverse-linked-list/) | Easy |
 | [0390-elimination-game](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0390-elimination-game/) | Medium |
 | [0779-k-th-symbol-in-grammar](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0779-k-th-symbol-in-grammar/) | Medium |
 ## String
@@ -84,6 +85,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0086-partition-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0086-partition-list/) | Medium |
 | [0143-reorder-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0143-reorder-list/) | Medium |
+| [0206-reverse-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0206-reverse-linked-list/) | Easy |
 | [0876-middle-of-the-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0876-middle-of-the-linked-list/) | Easy |
 ## Two Pointers
 | Problem Name | Difficulty |
