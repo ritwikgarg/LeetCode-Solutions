@@ -41,6 +41,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0060-permutation-sequence](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0060-permutation-sequence/) | Hard |
 | [0143-reorder-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0143-reorder-list/) | Medium |
 | [0206-reverse-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0206-reverse-linked-list/) | Easy |
+| [0234-palindrome-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0390-elimination-game](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0390-elimination-game/) | Medium |
 | [0779-k-th-symbol-in-grammar](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0779-k-th-symbol-in-grammar/) | Medium |
 ## String
@@ -90,6 +91,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0142-linked-list-cycle-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0142-linked-list-cycle-ii/) | Medium |
 | [0143-reorder-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0143-reorder-list/) | Medium |
 | [0206-reverse-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0206-reverse-linked-list/) | Easy |
+| [0234-palindrome-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0876-middle-of-the-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0876-middle-of-the-linked-list/) | Easy |
 ## Two Pointers
 | Problem Name | Difficulty |
@@ -100,6 +102,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0142-linked-list-cycle-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0142-linked-list-cycle-ii/) | Medium |
 | [0143-reorder-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0143-reorder-list/) | Medium |
 | [0151-reverse-words-in-a-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0151-reverse-words-in-a-string/) | Medium |
+| [0234-palindrome-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0876-middle-of-the-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0876-middle-of-the-linked-list/) | Easy |
 ## Greedy
 | Problem Name | Difficulty |
@@ -125,6 +128,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0143-reorder-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0143-reorder-list/) | Medium |
+| [0234-palindrome-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0456-132-pattern](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0456-132-pattern/) | Medium |
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1047-remove-all-adjacent-duplicates-in-string/) | Easy |
 | [1209-remove-all-adjacent-duplicates-in-string-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1209-remove-all-adjacent-duplicates-in-string-ii/) | Medium |
