@@ -23,8 +23,8 @@ public:
     }
 
     ListNode* merge(ListNode* leftHalf, ListNode* rightHalf) {
-        ListNode dummy(0);
-        ListNode* tail = &dummy;
+        ListNode* dummy = new ListNode();
+        ListNode* tail = dummy;
 
         while (leftHalf && rightHalf) {
             if (leftHalf->val < rightHalf->val) {
@@ -50,7 +50,7 @@ public:
             tail = tail->next;
         }
 
-        return dummy.next;
+        return dummy->next;
     }
 
     ListNode* splitHalf(ListNode* head) {
