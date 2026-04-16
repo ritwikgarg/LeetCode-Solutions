@@ -16,10 +16,10 @@ public:
         }
         
         ListNode* rightHalf = splitHalf(head);
-        head = sortList(head);
-        rightHalf = sortList(rightHalf);
+        ListNode* left = sortList(head);
+        ListNode* right = sortList(rightHalf);
 
-        return merge(head, rightHalf);
+        return merge(left, right);
     }
 
     ListNode* merge(ListNode* leftHalf, ListNode* rightHalf) {
