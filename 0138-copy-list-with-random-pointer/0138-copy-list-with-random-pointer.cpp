@@ -1,45 +1,53 @@
-/*
-// Definition for a Node.
-class Node {
-public:
-    int val;
-    Node* next;
-    Node* random;
-    
-    Node(int _val) {
-        val = _val;
-        next = NULL;
-        random = NULL;
-    }
-};
-*/
-
 class Solution {
 public:
     Node* copyRandomList(Node* head) {
-        unordered_map<Node*, Node*> copyMap;
         Node dummy(0);
-        Node* tail = &dummy;
+        Node* copiedTail = &dummy;
 
-        Node* curr = head;
+        // Step 1: Insert copied nodes between original nodes
+        Node* original = head;
 
-        while(curr) {
-            Node* newNode = new Node(curr->val);
-            copyMap[curr] = newNode;
+        while (original) {
+            Node* copied = new Node(original->val);
 
-            tail->next = newNode;
-            tail = newNode;
+            Node* originalNext = original->next;
 
-            curr = curr->next;
+            original->next = copied;
+            copied->next = originalNext;
+
+            original = originalNext;
         }
 
-        Node* oldCurr = head;
-        Node* newCurr = dummy.next;
+        // Step 2: Assign random pointers
+        original = head;
 
-        while(oldCurr) {
-            newCurr->random = oldCurr->random? copyMap[oldCurr->random]: nullptr;
-            oldCurr = oldCurr->next;
-            newCurr = newCurr->next;
+        while (original && original->next) {
+            Node* copied = original->next;
+
+            copied->random =
+                original->random
+                ? original->random->next
+                : nullptr;
+
+            original = copied->next;
+        }
+
+        // Step 3: Separate copied list and restore original
+        original = head;
+
+        while (original && original->next) {
+            Node* copied = original->next;
+
+            Node* nextOriginal = copied->next;
+
+            copiedTail->next = copied;
+            copiedTail = copied;
+
+            copied->next = nullptr;
+
+            original->next = nextOriginal;
+
+            original = nextOriginal;
         }
 
         return dummy.next;
