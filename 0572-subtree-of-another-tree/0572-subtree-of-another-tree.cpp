@@ -18,7 +18,7 @@ public:
     }
 
     void DFS(TreeNode* node, TreeNode* subTree) {
-        if (node == nullptr)
+        if (node == nullptr || isSubTree)
             return;
         
         if (sameTree(node, subTree)) {
