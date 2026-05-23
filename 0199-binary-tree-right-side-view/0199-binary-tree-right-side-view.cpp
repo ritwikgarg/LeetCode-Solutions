@@ -12,29 +12,20 @@
 class Solution {
 public:
     vector<int> rightSideView(TreeNode* root) {
-        queue<TreeNode*> q;
         vector<int> ans;
-        if (!root) return ans;
+        BFS(root, 0, ans);
+        return ans;
+    }
 
-        q.push(root);
+    void BFS(TreeNode* node, int depth, vector<int>& ans) {
+        if (node == nullptr) return;
 
-        while (!q.empty()) {
-            int levelsize = q.size();
-            vector<int> level = {};
-
-            for (int i=0; i<levelsize; i++) {
-                TreeNode* node = q.front();
-                q.pop();
-                
-                if (i == levelsize-1) {
-                    ans.push_back(node->val);
-                }
-
-                if (node->left) q.push(node->left);
-                if (node->right) q.push(node->right);
-            }
+        // First node seen at this depth is the rightmost one
+        if (depth == ans.size()) {
+            ans.push_back(node->val);
         }
 
-        return ans;
+        BFS(node->right, depth+1, ans);
+        BFS(node->left, depth+1, ans);
     }
 };
