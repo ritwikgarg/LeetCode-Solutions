@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0145-binary-tree-postorder-traversal](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0226-invert-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0226-invert-binary-tree/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [0572-subtree-of-another-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0572-subtree-of-another-tree/) | Easy |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -26,6 +27,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0145-binary-tree-postorder-traversal](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0226-invert-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0226-invert-binary-tree/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [0572-subtree-of-another-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0572-subtree-of-another-tree/) | Easy |
 | [1306-jump-game-iii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1306-jump-game-iii/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -47,6 +49,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0145-binary-tree-postorder-traversal](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0226-invert-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0226-invert-binary-tree/) | Easy |
 | [0543-diameter-of-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [0572-subtree-of-another-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0572-subtree-of-another-tree/) | Easy |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -214,4 +217,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0148-sort-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0148-sort-list/) | Medium |
+## String Matching
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0572-subtree-of-another-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0572-subtree-of-another-tree/) | Easy |
+## Hash Function
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0572-subtree-of-another-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0572-subtree-of-another-tree/) | Easy |
 <!---LeetCode Topics End-->
