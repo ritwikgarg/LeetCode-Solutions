@@ -10,48 +10,22 @@
 
 class Solution {
 public:
-    bool foundNode = false;
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        vector<TreeNode*> p_parents;
-        vector<TreeNode*> q_parents;
+        if (root == nullptr)
+            return nullptr;
 
-        findNode(root, p, p_parents);
-        foundNode = false;
-        findNode(root, q, q_parents);
-
-        for (auto node : p_parents) {
-            cout << node->val;
+        if (root == p || root == q) {
+            return root;
         }
-        cout << endl;
+
+        TreeNode* leftResult = lowestCommonAncestor(root->left, p, q);
+        TreeNode* rightResult = lowestCommonAncestor(root->right, p, q);
+
+        if (leftResult != nullptr && rightResult != nullptr) return root;
+        if (leftResult == nullptr && rightResult == nullptr) return nullptr;
+        if (leftResult != nullptr && rightResult == nullptr) return leftResult;
+        if (leftResult == nullptr && rightResult != nullptr) return rightResult;
         
-        for (auto node : q_parents) {
-            cout << node->val;
-        }
-
-        int plen = p_parents.size();
-        int qlen = q_parents.size();
-
-        for(int i=plen-1; i>=0; i--) {
-            for (int j=qlen-1; j>=0; j--) {
-                if (p_parents[i] == q_parents[j]) {
-                    return p_parents[i];
-                }
-            }
-        }
-
         return nullptr;
-    }
-
-    void findNode(TreeNode* root, TreeNode* node, vector<TreeNode*>& parents) {
-        if (root == nullptr || foundNode) return;
-        parents.push_back(root);
-        if (root == node) {
-            foundNode = true;
-            return;
-        }
-
-        findNode(root->left, node, parents);
-        findNode(root->right, node, parents);
-        if (!foundNode) parents.pop_back();
     }
 };
