@@ -12,29 +12,26 @@
 class Solution {
 public:
     int pathSum(TreeNode* root, int targetSum) {
-        int count = 0;
-        DFS(root, 0, targetSum, count, true);
-        return count;
+        unordered_map<long long, int> prefixSum;
+        prefixSum[0] = 1;
+        return DFS(root, 0, targetSum, prefixSum);
     }
 
-    void DFS(TreeNode* node, long long runningSum, int targetSum, int& count, bool canStartNew) {
-        if (!node) return;
+    int DFS(TreeNode* node, long long currSum, int targetSum, unordered_map<long long, int>& prefixSum) {
+        if (!node) return 0;
 
-        runningSum += node->val;
+        int count = 0;
 
-        if (runningSum == targetSum) {
-            count++;
-        }
+        currSum += (long long) node->val;
+        count += prefixSum[currSum - targetSum];
 
-        // Continue the current path
-        DFS(node->left, runningSum, targetSum, count, false);
-        DFS(node->right, runningSum, targetSum, count, false);
+        prefixSum[currSum]++;
 
-        // Only one type of call is allowed to start fresh paths from children.
-        // This prevents duplicate restarts.
-        if (canStartNew) {
-            DFS(node->left, 0, targetSum, count, true);
-            DFS(node->right, 0, targetSum, count, true);
-        }
+        count += DFS(node->left, currSum, targetSum, prefixSum);
+        count += DFS(node->right, currSum, targetSum, prefixSum);
+
+        prefixSum[currSum]--;
+
+        return count;
     }
 };
