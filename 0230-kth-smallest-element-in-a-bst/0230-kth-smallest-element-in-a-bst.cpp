@@ -18,16 +18,16 @@ public:
         int ans = 0;
         if (!root) return 0;
 
-        DFS(root, k, &count, &ans);
+        DFS(root, k, count, ans);
         return ans;
     }
 
-    void DFS (TreeNode* node, int k, int* count, int* ans) {
+    void DFS (TreeNode* node, int k, int& count, int& ans) {
         if (!node) return;
 
         DFS(node->left, k, count, ans);
-        (*count)++;
-        if (*count == k) *ans = node->val;
+        count++;
+        if (count == k) ans = node->val;
         DFS(node->right, k, count, ans);
     }
 };
