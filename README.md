@@ -24,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0226-invert-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0226-invert-binary-tree/) | Easy |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0235-lowest-common-ancestor-of-a-binary-search-tree/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0437-path-sum-iii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0437-path-sum-iii/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0572-subtree-of-another-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0572-subtree-of-another-tree/) | Easy |
@@ -48,6 +49,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0226-invert-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0226-invert-binary-tree/) | Easy |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0235-lowest-common-ancestor-of-a-binary-search-tree/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0437-path-sum-iii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0437-path-sum-iii/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0572-subtree-of-another-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0572-subtree-of-another-tree/) | Easy |
@@ -67,6 +69,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0112-path-sum](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0112-path-sum/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0226-invert-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0226-invert-binary-tree/) | Easy |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0662-maximum-width-of-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
@@ -93,6 +96,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0226-invert-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0226-invert-binary-tree/) | Easy |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0235-lowest-common-ancestor-of-a-binary-search-tree/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0437-path-sum-iii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0437-path-sum-iii/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0572-subtree-of-another-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0572-subtree-of-another-tree/) | Easy |
@@ -133,6 +137,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0006-zigzag-conversion](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0006-zigzag-conversion/) | Medium |
 | [0022-generate-parentheses](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
 | [0151-reverse-words-in-a-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0151-reverse-words-in-a-string/) | Medium |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
 | [0784-letter-case-permutation](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0784-letter-case-permutation/) | Medium |
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1047-remove-all-adjacent-duplicates-in-string/) | Easy |
@@ -297,4 +302,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
+## Design
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 <!---LeetCode Topics End-->
