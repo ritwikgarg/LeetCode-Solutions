@@ -2,29 +2,29 @@ class Solution {
 public:
     int findCircleNum(vector<vector<int>>& isConnected) {
         int n = isConnected.size();
-        vector<int> visited(n, 0);
+        vector<int> visited (n,0);
 
         int count = 0;
-
-        for (int i = 0; i < n; i++) {
-            if (!visited[i]) {
+        for (int i=0; i<n; i++) {
+            if (visited[i] == 0) {
                 count++;
-                DFS(i, isConnected, visited);
+                queue<int> q;
+                q.push(i);
+
+                while (!q.empty()) {
+                    int currNode = q.front();
+                    q.pop();
+                    visited[currNode] = 1;
+
+                    for (int i=0; i<n; i++) {
+                        if (isConnected[currNode][i] == 1) {
+                            if (!visited[i])
+                                q.push(i);
+                        }
+                    }
+                }
             }
         }
-
         return count;
-    }
-
-    void DFS(int node, vector<vector<int>>& isConnected, vector<int>& visited) {
-        visited[node] = 1;
-
-        int n = isConnected.size();
-
-        for (int neighbor = 0; neighbor < n; neighbor++) {
-            if (isConnected[node][neighbor] == 1 && !visited[neighbor]) {
-                DFS(neighbor, isConnected, visited);
-            }
-        }
     }
 };
