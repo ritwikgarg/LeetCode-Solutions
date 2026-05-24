@@ -36,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0701-insert-into-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0701-insert-into-a-binary-search-tree/) | Medium |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
+| [1382-balance-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1382-balance-a-binary-search-tree/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1448-count-good-nodes-in-binary-tree/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
@@ -64,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [1306-jump-game-iii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1306-jump-game-iii/) | Medium |
+| [1382-balance-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1382-balance-a-binary-search-tree/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1448-count-good-nodes-in-binary-tree/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -115,6 +117,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0701-insert-into-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0701-insert-into-a-binary-search-tree/) | Medium |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
+| [1382-balance-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1382-balance-a-binary-search-tree/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1448-count-good-nodes-in-binary-tree/) | Medium |
 ## Math
 | Problem Name | Difficulty |
@@ -234,6 +237,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0045-jump-game-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0045-jump-game-ii/) | Medium |
 | [0055-jump-game](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0055-jump-game/) | Medium |
+| [1382-balance-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1382-balance-a-binary-search-tree/) | Medium |
 | [1648-sell-diminishing-valued-colored-balls](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1648-sell-diminishing-valued-colored-balls/) | Medium |
 ## Binary Search
 | Problem Name | Difficulty |
@@ -294,6 +298,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0106-construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium |
 | [0148-sort-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0148-sort-list/) | Medium |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
+| [1382-balance-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1382-balance-a-binary-search-tree/) | Medium |
 ## Merge Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -315,6 +320,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0450-delete-node-in-a-bst](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0450-delete-node-in-a-bst/) | Medium |
 | [0700-search-in-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0700-search-in-a-binary-search-tree/) | Easy |
 | [0701-insert-into-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0701-insert-into-a-binary-search-tree/) | Medium |
+| [1382-balance-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1382-balance-a-binary-search-tree/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
