@@ -50,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0112-path-sum](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0112-path-sum/) | Easy |
 | [0113-path-sum-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0113-path-sum-ii/) | Medium |
 | [0124-binary-tree-maximum-path-sum](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
+| [0130-surrounded-regions](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0130-surrounded-regions/) | Medium |
 | [0144-binary-tree-preorder-traversal](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0145-binary-tree-postorder-traversal](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0199-binary-tree-right-side-view/) | Medium |
@@ -77,6 +78,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0103-binary-tree-zigzag-level-order-traversal/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0112-path-sum](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0112-path-sum/) | Easy |
+| [0130-surrounded-regions](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0130-surrounded-regions/) | Medium |
 | [0199-binary-tree-right-side-view](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0226-invert-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0226-invert-binary-tree/) | Easy |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
@@ -185,6 +187,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0059-spiral-matrix-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0059-spiral-matrix-ii/) | Medium |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0106-construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium |
+| [0130-surrounded-regions](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0130-surrounded-regions/) | Medium |
 | [0287-find-the-duplicate-number](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0287-find-the-duplicate-number/) | Medium |
 | [0456-132-pattern](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0456-132-pattern/) | Medium |
 | [0528-random-pick-with-weight](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0528-random-pick-with-weight/) | Medium |
@@ -294,6 +297,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0059-spiral-matrix-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0059-spiral-matrix-ii/) | Medium |
+| [0130-surrounded-regions](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0130-surrounded-regions/) | Medium |
 | [0542-01-matrix](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0542-01-matrix/) | Medium |
 | [0994-rotting-oranges](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0994-rotting-oranges/) | Medium |
 ## Simulation
@@ -341,6 +345,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0130-surrounded-regions](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0130-surrounded-regions/) | Medium |
 | [0547-number-of-provinces](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0547-number-of-provinces/) | Medium |
 ## Graph Theory
 | Problem Name | Difficulty |
