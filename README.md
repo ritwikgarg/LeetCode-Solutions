@@ -296,6 +296,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0787-cheapest-flights-within-k-stops](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1648-sell-diminishing-valued-colored-balls](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1648-sell-diminishing-valued-colored-balls/) | Medium |
+| [3650-minimum-cost-path-with-edge-reversals](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/3650-minimum-cost-path-with-edge-reversals/) | Medium |
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -393,6 +394,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0547-number-of-provinces](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0547-number-of-provinces/) | Medium |
 | [0743-network-delay-time](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0743-network-delay-time/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
+| [3650-minimum-cost-path-with-edge-reversals](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/3650-minimum-cost-path-with-edge-reversals/) | Medium |
 ## Topological Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -403,4 +405,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0743-network-delay-time](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0743-network-delay-time/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
+| [3650-minimum-cost-path-with-edge-reversals](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/3650-minimum-cost-path-with-edge-reversals/) | Medium |
 <!---LeetCode Topics End-->
