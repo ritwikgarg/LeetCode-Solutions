@@ -78,6 +78,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0103-binary-tree-zigzag-level-order-traversal/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0112-path-sum](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0112-path-sum/) | Easy |
+| [0127-word-ladder](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0127-word-ladder/) | Hard |
 | [0130-surrounded-regions](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0130-surrounded-regions/) | Medium |
 | [0199-binary-tree-right-side-view](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0226-invert-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0226-invert-binary-tree/) | Easy |
@@ -157,6 +158,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0005-longest-palindromic-substring](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0006-zigzag-conversion](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0006-zigzag-conversion/) | Medium |
 | [0022-generate-parentheses](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
+| [0127-word-ladder](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0127-word-ladder/) | Hard |
 | [0151-reverse-words-in-a-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0151-reverse-words-in-a-string/) | Medium |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
@@ -201,6 +203,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0041-first-missing-positive](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0041-first-missing-positive/) | Hard |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal/) | Medium |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0106-construct-binary-tree-from-inorder-and-postorder-traversal/) | Medium |
+| [0127-word-ladder](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0127-word-ladder/) | Hard |
 | [0138-copy-list-with-random-pointer](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0138-copy-list-with-random-pointer/) | Medium |
 | [0141-linked-list-cycle](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0141-linked-list-cycle/) | Easy |
 | [0142-linked-list-cycle-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0142-linked-list-cycle-ii/) | Medium |
