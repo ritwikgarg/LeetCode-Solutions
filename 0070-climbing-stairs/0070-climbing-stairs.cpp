@@ -1,19 +1,18 @@
 class Solution {
 public:
     int climbStairs(int n) {
-        // Using memoization -> top-down recursion + caching
-        // So we want to start from dfs(n) and go down to base case
+        // Using tabulation: bottom-up iteration
+        // So we start at base case and then go to final ans
         vector<int> dp(n+1, -1);
-        return dfs(n, dp);
-    }
+        dp[0] = 1;
+        dp[1] = 1;
 
-    int dfs(int n, vector<int>& dp) {
-        if (n == 0 || n == 1) return 1;
-
-        if (dp[n] != -1) return dp[n];
-
-        dp[n] = dfs(n-1, dp) + dfs(n-2, dp);
+        for (int i=0; i<n-1; i++) {
+            dp[i+2] = dp[i] + dp[i+1];
+        }
 
         return dp[n];
     }
+
+
 };
