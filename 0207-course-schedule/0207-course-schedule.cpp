@@ -7,7 +7,7 @@ public:
         for (auto &edge:prerequisites) {
             int u = edge[0];
             int v = edge[1];
-            adjList[u].push_back(v);
+            adjList[v].push_back(u);
         }
 
         vector<int> indegree(numCourses, 0);
