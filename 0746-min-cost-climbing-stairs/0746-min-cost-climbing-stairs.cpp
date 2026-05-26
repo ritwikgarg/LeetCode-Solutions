@@ -4,19 +4,13 @@ public:
         int n = cost.size();
         if (n==0 || n==1) return 0;
         vector<int> dp(n+1, INT_MAX);
+        dp[0] = 0;
+        dp[1] = 0;
 
-        return minCost(n, cost, dp);
-    }
+        for (int i=2; i<=n; i++) {
+            dp[i] = min((dp[i-1] + cost[i-1]), (dp[i-2] + cost[i-2]));
+        }
 
-    int minCost(int n, vector<int>& cost, vector<int>& dp) {
-        if (n==0 || n==1) return 0;
-
-        if (dp[n] != INT_MAX) return dp[n];
-        
-        int oneStep = cost[n-1] + minCost(n-1, cost, dp);
-        int twoStep = cost[n-2] + minCost(n-2, cost, dp);
-
-        dp[n] = min(oneStep, twoStep);
         return dp[n];
     }
 };
