@@ -233,6 +233,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0213-house-robber-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0213-house-robber-ii/) | Medium |
 | [0287-find-the-duplicate-number](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0287-find-the-duplicate-number/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0416-partition-equal-subset-sum/) | Medium |
+| [0455-assign-cookies](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0455-assign-cookies/) | Easy |
 | [0456-132-pattern](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0456-132-pattern/) | Medium |
 | [0528-random-pick-with-weight](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0528-random-pick-with-weight/) | Medium |
 | [0542-01-matrix](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0542-01-matrix/) | Medium |
@@ -296,6 +297,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0160-intersection-of-two-linked-lists](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0287-find-the-duplicate-number](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0287-find-the-duplicate-number/) | Medium |
+| [0455-assign-cookies](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0455-assign-cookies/) | Easy |
 | [0876-middle-of-the-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0876-middle-of-the-linked-list/) | Easy |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/2095-delete-the-middle-node-of-a-linked-list/) | Medium |
 ## Greedy
@@ -303,6 +305,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0045-jump-game-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0045-jump-game-ii/) | Medium |
 | [0055-jump-game](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0055-jump-game/) | Medium |
+| [0455-assign-cookies](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0455-assign-cookies/) | Easy |
 | [1382-balance-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1382-balance-a-binary-search-tree/) | Medium |
 | [1648-sell-diminishing-valued-colored-balls](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1648-sell-diminishing-valued-colored-balls/) | Medium |
 ## Binary Search
@@ -317,6 +320,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0148-sort-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0148-sort-list/) | Medium |
+| [0455-assign-cookies](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0455-assign-cookies/) | Easy |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [1648-sell-diminishing-valued-colored-balls](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1648-sell-diminishing-valued-colored-balls/) | Medium |
 ## Heap (Priority Queue)
