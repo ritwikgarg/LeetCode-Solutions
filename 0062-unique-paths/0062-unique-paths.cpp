@@ -6,24 +6,27 @@ public:
     }
 
     int pathCount(int m, int n) {
-        vector<vector<int>> dp(m, vector(n, 0));
-
-        dp[0][0] = 1;
+        vector<int> dp(n, 0);
 
         for (int i=0; i<m; i++) {
+            vector<int> temp(n, 0);
             for (int j=0; j<n; j++) {
-                if (i==0 && j==0) continue;
-                
+                if (i==0 && j==0) {
+                    temp[0] = 1;
+                    continue;
+                } 
+
                 int prevRow = 0;
                 int prevCol = 0;
 
-                if (i-1 >= 0) prevRow = dp[i-1][j];
-                if (j-1 >= 0) prevCol = dp[i][j-1];
+                if (i-1 >= 0) prevRow = dp[j];
+                if (j-1 >= 0) prevCol = temp[j-1];
 
-                dp[i][j] = prevRow + prevCol;
+                temp[j] = prevRow + prevCol;
             }
+            dp = temp;
         }
         
-        return dp[m-1][n-1];
+        return dp[n-1];
     }
 };
