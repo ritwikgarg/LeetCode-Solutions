@@ -1,25 +1,29 @@
 class Solution {
 public:
     int uniquePaths(int m, int n) {
-        // Using memoization
-        vector<vector<int>> dp(m, vector(n, 0));
-        return pathCount(m-1, n-1, m-1, n-1, dp);
+        // Using tabulation
+        return pathCount(m, n);
     }
 
-    int pathCount(int row, int col, int m, int n, vector<vector<int>>& dp) {
-        if (row==0 && col==0) return 1;
+    int pathCount(int m, int n) {
+        vector<vector<int>> dp(m, vector(n, 0));
 
-        if (row < 0) return 0;
-        if (col < 0) return 0;
+        dp[0][0] = 1;
 
-        if (dp[row][col] != 0) return dp[row][col];
+        for (int i=0; i<m; i++) {
+            for (int j=0; j<n; j++) {
+                if (i==0 && j==0) continue;
+                
+                int prevRow = 0;
+                int prevCol = 0;
+
+                if (i-1 >= 0) prevRow = dp[i-1][j];
+                if (j-1 >= 0) prevCol = dp[i][j-1];
+
+                dp[i][j] = prevRow + prevCol;
+            }
+        }
         
-        int downPath = 0;
-        int rightPath = 0;
-
-        rightPath = pathCount(row, col-1, m, n, dp);
-        downPath = pathCount(row-1, col, m, n, dp);
-        dp[row][col] = downPath + rightPath;
-        return dp[row][col];
+        return dp[m-1][n-1];
     }
 };
