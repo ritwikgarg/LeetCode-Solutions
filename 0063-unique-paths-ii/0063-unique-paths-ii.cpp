@@ -13,27 +13,31 @@ public:
 
     int findPaths(int rows, int cols, vector<vector<int>>& obstacleGrid) {
 
-        vector<vector<int>> dp(rows, vector<int>(cols, -1));
-        dp[0][0] = 1;
+        vector<int> dp(cols, 0);
 
         for (int i=0; i<rows; i++) {
+            vector<int> temp(cols);
             for (int j=0; j<cols; j++) {
-                if (i==0 && j==0) continue;
+                if (i == 0 && j == 0) {
+                    temp[j] = 1;
+                    continue;
+                }
 
                 if (obstacleGrid[i][j] == 1) {
-                    dp[i][j] = 0;
+                    temp[j] = 0;
                     continue;
                 }
 
                 int prevRow = 0;
                 int prevCol = 0;
-                if (i-1 >=0) prevRow = dp[i-1][j];
-                if (j-1 >=0) prevCol = dp[i][j-1];
+                if (i-1 >=0) prevRow = dp[j];
+                if (j-1 >=0) prevCol = temp[j-1];
 
-                dp[i][j] = prevRow + prevCol;
+                temp[j] = prevRow + prevCol;
             }
+            dp = temp;
         }
 
-        return dp[rows-1][cols-1];
+        return dp[cols-1];
     }
 };
