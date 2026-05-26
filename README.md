@@ -149,6 +149,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0007-reverse-integer](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0007-reverse-integer/) | Medium |
 | [0060-permutation-sequence](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0060-permutation-sequence/) | Hard |
+| [0062-unique-paths](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0062-unique-paths/) | Medium |
 | [0070-climbing-stairs](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0070-climbing-stairs/) | Easy |
 | [0390-elimination-game](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0390-elimination-game/) | Medium |
 | [0528-random-pick-with-weight](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0528-random-pick-with-weight/) | Medium |
@@ -198,6 +199,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0022-generate-parentheses](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
 | [0045-jump-game-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0045-jump-game-ii/) | Medium |
 | [0055-jump-game](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0055-jump-game/) | Medium |
+| [0062-unique-paths](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0062-unique-paths/) | Medium |
 | [0070-climbing-stairs](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0070-climbing-stairs/) | Easy |
 | [0124-binary-tree-maximum-path-sum](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0198-house-robber](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0198-house-robber/) | Medium |
@@ -422,4 +424,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0070-climbing-stairs](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0070-climbing-stairs/) | Easy |
+## Combinatorics
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0062-unique-paths](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0062-unique-paths/) | Medium |
 <!---LeetCode Topics End-->
