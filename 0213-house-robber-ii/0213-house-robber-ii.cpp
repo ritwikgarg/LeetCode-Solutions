@@ -14,9 +14,9 @@ public:
             if (i!=0) temp2.push_back(nums[i]);
         }
 
-
         vector<int> dp1(n-1, INT_MIN);
         vector<int> dp2(n-1, INT_MIN);
+
         int skippingLastHouse = robHouse(n-2, temp1, dp1);
         int skippingFirstHouse = robHouse(n-2, temp2, dp2);
 
@@ -27,12 +27,14 @@ public:
         if (i==0) return nums[0];
         if (i==1) return max(nums[0], nums[1]);
 
-        if (dp[i] != INT_MIN) return dp[i];
+        dp[0] = nums[0];
+        dp[1] = max(nums[0], nums[1]);
 
-        int skipCurr = robHouse(i-1, nums, dp);
-        int robCurr = nums[i] + robHouse(i-2, nums, dp);
+        int n=nums.size();
+        for (int i=2; i<n; i++) {
+            dp[i] = max(dp[i-1], nums[i] + dp[i-2]);
+        }
 
-        dp[i] = max(skipCurr, robCurr);
-        return dp[i];
+        return dp[n-1];
     }
 };
