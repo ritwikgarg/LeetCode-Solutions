@@ -201,6 +201,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0070-climbing-stairs](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0070-climbing-stairs/) | Easy |
 | [0124-binary-tree-maximum-path-sum](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0542-01-matrix](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0542-01-matrix/) | Medium |
+| [0746-min-cost-climbing-stairs](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0746-min-cost-climbing-stairs/) | Easy |
 | [0787-cheapest-flights-within-k-stops](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 ## Array
 | Problem Name | Difficulty |
@@ -218,6 +219,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0528-random-pick-with-weight](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0528-random-pick-with-weight/) | Medium |
 | [0542-01-matrix](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0542-01-matrix/) | Medium |
 | [0695-max-area-of-island](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0695-max-area-of-island/) | Medium |
+| [0746-min-cost-climbing-stairs](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0746-min-cost-climbing-stairs/) | Easy |
 | [0752-open-the-lock](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0752-open-the-lock/) | Medium |
 | [0994-rotting-oranges](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0994-rotting-oranges/) | Medium |
 | [1091-shortest-path-in-binary-matrix](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1091-shortest-path-in-binary-matrix/) | Medium |
