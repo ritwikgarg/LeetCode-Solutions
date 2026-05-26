@@ -98,6 +98,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0210-course-schedule-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0210-course-schedule-ii/) | Medium |
 | [0226-invert-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0226-invert-binary-tree/) | Easy |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
+| [0322-coin-change](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0322-coin-change/) | Medium |
 | [0542-01-matrix](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0542-01-matrix/) | Medium |
 | [0547-number-of-provinces](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0547-number-of-provinces/) | Medium |
 | [0662-maximum-width-of-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
@@ -212,6 +213,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0124-binary-tree-maximum-path-sum](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0198-house-robber](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0198-house-robber/) | Medium |
 | [0213-house-robber-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0213-house-robber-ii/) | Medium |
+| [0322-coin-change](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0322-coin-change/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0542-01-matrix](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0542-01-matrix/) | Medium |
 | [0746-min-cost-climbing-stairs](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0746-min-cost-climbing-stairs/) | Easy |
@@ -232,6 +234,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0200-number-of-islands](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0200-number-of-islands/) | Medium |
 | [0213-house-robber-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0213-house-robber-ii/) | Medium |
 | [0287-find-the-duplicate-number](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0287-find-the-duplicate-number/) | Medium |
+| [0322-coin-change](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0322-coin-change/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0416-partition-equal-subset-sum/) | Medium |
 | [0455-assign-cookies](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0455-assign-cookies/) | Easy |
 | [0456-132-pattern](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0456-132-pattern/) | Medium |
