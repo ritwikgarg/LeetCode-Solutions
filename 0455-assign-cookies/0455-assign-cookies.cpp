@@ -1,19 +1,20 @@
 class Solution {
 public:
     int findContentChildren(vector<int>& g, vector<int>& s) {
-        multiset<int> cookieSize(s.begin(), s.end());
-        int n = g.size();
+        sort(g.begin(), g.end());
+        sort(s.begin(), s.end());
 
-        int count = 0;
-        for (int i=0; i<n; i++) {
-            if (cookieSize.size() == 0) return count;
-            auto it = cookieSize.lower_bound(g[i]);
+        int child = 0;
+        int cookie = 0;
 
-            if (it != cookieSize.end()) {
-                count++;
-                cookieSize.erase(it);
-            }   
+        while (child < g.size() && cookie < s.size()) {
+            if (s[cookie] >= g[child]) {
+                child++;   // this child is satisfied
+            }
+
+            cookie++;      // this cookie is used or skipped
         }
-        return count;
+
+        return child;
     }
 };
