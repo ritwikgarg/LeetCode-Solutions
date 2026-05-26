@@ -8,25 +8,32 @@ public:
         if (obstacleGrid[0][0] == 1) return 0;
         if (obstacleGrid[m-1][n-1] == 1) return 0;
 
-        vector<vector<int>> dp(m, vector<int>(n, -1));
-
-        return findPaths(m-1, n-1, m-1, n-1, obstacleGrid, dp);
+        return findPaths(m, n, obstacleGrid);
     }
 
-    int findPaths(int row, int col, int m, int n, vector<vector<int>>& obstacleGrid, vector<vector<int>>& dp) {
-        if (row ==0 && col == 0) return 1;
+    int findPaths(int rows, int cols, vector<vector<int>>& obstacleGrid) {
 
-        if (row<0) return 0;
-        if (col<0) return 0;
+        vector<vector<int>> dp(rows, vector<int>(cols, -1));
+        dp[0][0] = 1;
 
-        if (obstacleGrid[row][col] == 1) return 0;
+        for (int i=0; i<rows; i++) {
+            for (int j=0; j<cols; j++) {
+                if (i==0 && j==0) continue;
 
-        if (dp[row][col] != -1) return dp[row][col];
+                if (obstacleGrid[i][j] == 1) {
+                    dp[i][j] = 0;
+                    continue;
+                }
 
-        int prevRow = findPaths(row-1, col, m, n, obstacleGrid, dp);
-        int prevCol = findPaths(row, col-1, m, n, obstacleGrid, dp);
+                int prevRow = 0;
+                int prevCol = 0;
+                if (i-1 >=0) prevRow = dp[i-1][j];
+                if (j-1 >=0) prevCol = dp[i][j-1];
 
-        dp[row][col] = prevRow + prevCol;
-        return dp[row][col];
+                dp[i][j] = prevRow + prevCol;
+            }
+        }
+
+        return dp[rows-1][cols-1];
     }
 };
