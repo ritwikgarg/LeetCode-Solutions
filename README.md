@@ -38,6 +38,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [1382-balance-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1382-balance-a-binary-search-tree/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1448-count-good-nodes-in-binary-tree/) | Medium |
+| [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/2385-amount-of-time-for-binary-tree-to-be-infected/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -77,6 +78,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1382-balance-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1382-balance-a-binary-search-tree/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1448-count-good-nodes-in-binary-tree/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1631-path-with-minimum-effort/) | Medium |
+| [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/2385-amount-of-time-for-binary-tree-to-be-infected/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -109,6 +111,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1306-jump-game-iii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1306-jump-game-iii/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1448-count-good-nodes-in-binary-tree/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1631-path-with-minimum-effort/) | Medium |
+| [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/2385-amount-of-time-for-binary-tree-to-be-infected/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -144,6 +147,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 | [1382-balance-a-binary-search-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1382-balance-a-binary-search-tree/) | Medium |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1448-count-good-nodes-in-binary-tree/) | Medium |
+| [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/2385-amount-of-time-for-binary-tree-to-be-infected/) | Medium |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -253,6 +257,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0752-open-the-lock](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0752-open-the-lock/) | Medium |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
+| [2385-amount-of-time-for-binary-tree-to-be-infected](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/2385-amount-of-time-for-binary-tree-to-be-infected/) | Medium |
 | [2661-first-completely-painted-row-or-column](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/2661-first-completely-painted-row-or-column/) | Medium |
 ## Linked List
 | Problem Name | Difficulty |
