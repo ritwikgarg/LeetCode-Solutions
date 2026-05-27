@@ -2,32 +2,35 @@ class Solution {
 public:
     string longestPalindrome(string s) {
         int n = s.size();
-        int maxLen = INT_MIN;
-        int startingIndex = 0;
 
-        for (int i=0; i<n; i++) {
-            int oddLen = expand(s, i, i);
-            int evenLen = expand(s, i, i+1);
+        vector<vector<bool>> dp(n, vector<bool>(n, false));
 
-            int len = max(oddLen, evenLen);
+        int start = 0;
+        int maxLen = 1;
 
-            if (len > maxLen) {
-                maxLen = len;
-                startingIndex = i - (len - 1) / 2;
+        // Length 1 substrings
+        for (int i = 0; i < n; i++) {
+            dp[i][i] = true;
+        }
+
+        // Check substrings of length 2 and more
+        for (int len = 2; len <= n; len++) {
+            for (int i = 0; i + len - 1 < n; i++) {
+                int j = i + len - 1;
+
+                if (s[i] == s[j]) {
+                    if (len == 2 || dp[i + 1][j - 1]) {
+                        dp[i][j] = true;
+
+                        if (len > maxLen) {
+                            maxLen = len;
+                            start = i;
+                        }
+                    }
+                }
             }
         }
 
-        return s.substr(startingIndex, maxLen);
-    }
-
-    int expand(string &s, int i, int j) {
-        int maxLen = 0;
-        while (i>=0 && j<s.size() && s[i] == s[j]) {
-            maxLen = j-i+1;
-            i--;
-            j++;
-        }
-
-        return maxLen;
+        return s.substr(start, maxLen);
     }
 };
