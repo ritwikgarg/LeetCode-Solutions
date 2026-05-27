@@ -27,7 +27,6 @@ public:
 
         int result = min(bottomHP, rightHP) - dungeon[row][col];
 
-        dp[row][col] = (result > 0) ? result : 1;
-        return (result > 0) ? result : 1;
+        return dp[row][col] = (result > 0) ? result : 1;
     }
 };
