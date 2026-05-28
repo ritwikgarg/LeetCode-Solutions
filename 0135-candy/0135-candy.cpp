@@ -3,34 +3,37 @@ public:
     int candy(vector<int>& ratings) {
         int n = ratings.size();
 
-        vector<int> leftNeighbor (n);
-        vector<int> rightNeighbor (n);
+        int candy = n; // each child gets 1 candy
 
-        leftNeighbor[0] = 1;
-        rightNeighbor[n-1] = 1;
+        int i = 1;
 
-        for(int i=1; i<n; i++) {
-            if (ratings[i-1] < ratings[i]) {
-                leftNeighbor[i] = leftNeighbor[i-1] + 1;
-            } else {
-                leftNeighbor[i] = 1;
+        while (i < n) {
+            // Flat slope
+            if (ratings[i] == ratings[i - 1]) {
+                i++;
+                continue;
             }
-        }
 
-        for(int i=n-2; i>=0; i--) {
-            if (ratings[i] > ratings[i+1]) {
-                rightNeighbor[i] = rightNeighbor[i+1] + 1;
-            } else {
-                rightNeighbor[i] = 1;
+            // Increasing slope
+            int peak = 0;
+            while (i < n && ratings[i] > ratings[i - 1]) {
+                peak++;
+                candy += peak;
+                i++;
             }
+
+            // Decreasing slope
+            int dip = 0;
+            while (i < n && ratings[i] < ratings[i - 1]) {
+                dip++;
+                candy += dip;
+                i++;
+            }
+
+            // Peak was counted from both increasing and decreasing sides
+            candy -= min(peak, dip);
         }
 
-        int minCandies = 0;
-        
-        for (int i=0; i<n; i++) {
-            minCandies += max(leftNeighbor[i], rightNeighbor[i]);
-        }
-
-        return minCandies;
+        return candy;
     }
 };
