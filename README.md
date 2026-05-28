@@ -190,6 +190,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0127-word-ladder](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0127-word-ladder/) | Hard |
 | [0151-reverse-words-in-a-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0151-reverse-words-in-a-string/) | Medium |
 | [0208-implement-trie-prefix-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0208-implement-trie-prefix-tree/) | Medium |
+| [0212-word-search-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0212-word-search-ii/) | Hard |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
 | [0394-decode-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0394-decode-string/) | Medium |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
@@ -206,6 +207,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0022-generate-parentheses/) | Medium |
 | [0113-path-sum-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0113-path-sum-ii/) | Medium |
+| [0212-word-search-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0212-word-search-ii/) | Hard |
 | [0494-target-sum](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0494-target-sum/) | Medium |
 | [0784-letter-case-permutation](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0784-letter-case-permutation/) | Medium |
 ## Dynamic Programming
@@ -254,6 +256,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0174-dungeon-game](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0174-dungeon-game/) | Hard |
 | [0198-house-robber](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0198-house-robber/) | Medium |
 | [0200-number-of-islands](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0200-number-of-islands/) | Medium |
+| [0212-word-search-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0212-word-search-ii/) | Hard |
 | [0213-house-robber-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0213-house-robber-ii/) | Medium |
 | [0287-find-the-duplicate-number](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0287-find-the-duplicate-number/) | Medium |
 | [0300-longest-increasing-subsequence](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0300-longest-increasing-subsequence/) | Medium |
@@ -406,6 +409,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0130-surrounded-regions](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0130-surrounded-regions/) | Medium |
 | [0174-dungeon-game](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0174-dungeon-game/) | Hard |
 | [0200-number-of-islands](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0200-number-of-islands/) | Medium |
+| [0212-word-search-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0212-word-search-ii/) | Hard |
 | [0542-01-matrix](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0542-01-matrix/) | Medium |
 | [0695-max-area-of-island](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0695-max-area-of-island/) | Medium |
 | [0994-rotting-oranges](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0994-rotting-oranges/) | Medium |
@@ -498,4 +502,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0208-implement-trie-prefix-tree/) | Medium |
+| [0212-word-search-ii](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0212-word-search-ii/) | Hard |
 <!---LeetCode Topics End-->
