@@ -2,29 +2,34 @@ class Solution {
 public:
     vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
         int i = 0;
+        vector<vector<int>> result;
+
 
         while (i < intervals.size()) {
             // end of an interval is smaller than start of new interval
             if (intervals[i][1] < newInterval[0]) {
+                result.push_back(intervals[i]);
                 i++;
             }
 
             // start of an interval is larger than end of new interval
             else if (intervals[i][0] > newInterval[1]) {
-                intervals.insert(intervals.begin() + i, newInterval);
-                return intervals;
+                break;
             }
 
             // merge the intervals and erase the existing interval
             else {
                 newInterval[0] = min(newInterval[0], intervals[i][0]);
                 newInterval[1] = max(newInterval[1], intervals[i][1]);
-
-                intervals.erase(intervals.begin() + i);
+                i++;
             }
         }
 
-        intervals.push_back(newInterval);
-        return intervals;
+        result.push_back(newInterval);
+        while (i<intervals.size()) {
+            result.push_back(intervals[i]);
+            i++;
+        }
+        return result;
     }
 };
