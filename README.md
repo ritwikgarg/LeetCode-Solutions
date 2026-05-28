@@ -179,6 +179,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0206-reverse-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0206-reverse-linked-list/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0390-elimination-game](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0390-elimination-game/) | Medium |
+| [0394-decode-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0394-decode-string/) | Medium |
 | [0779-k-th-symbol-in-grammar](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0779-k-th-symbol-in-grammar/) | Medium |
 ## String
 | Problem Name | Difficulty |
@@ -189,6 +190,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0127-word-ladder](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0127-word-ladder/) | Hard |
 | [0151-reverse-words-in-a-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0151-reverse-words-in-a-string/) | Medium |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0297-serialize-and-deserialize-binary-tree/) | Hard |
+| [0394-decode-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0394-decode-string/) | Medium |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
 | [0516-longest-palindromic-subsequence](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0516-longest-palindromic-subsequence/) | Medium |
 | [0647-palindromic-substrings](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0647-palindromic-substrings/) | Medium |
@@ -372,6 +374,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0144-binary-tree-preorder-traversal](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0145-binary-tree-postorder-traversal](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0234-palindrome-linked-list/) | Easy |
+| [0394-decode-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0394-decode-string/) | Medium |
 | [0456-132-pattern](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0456-132-pattern/) | Medium |
 | [0678-valid-parenthesis-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/0678-valid-parenthesis-string/) | Medium |
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/ritwikgarg/LeetCode-Solutions/tree/main/1047-remove-all-adjacent-duplicates-in-string/) | Easy |
